@@ -1,0 +1,7 @@
+
+
+<div *ngFor="let record of records$ | async">
+    <app-record-item [systolic]="record.systolic" 
+                     [diastolic]="record.diastolic"
+                     [date]="record.date"></app-record-item>
+</div>

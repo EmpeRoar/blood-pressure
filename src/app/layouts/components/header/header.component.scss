@@ -1,0 +1,28 @@
+@import 'variables';
+.header {
+    background-color: $main;
+    height: 81px;
+    padding:10px;
+
+    display: grid;
+    grid-template-areas: "brand profile";
+    .brand {
+        grid-area: brand;
+        h1 {
+            padding: 0 0 10px 0;
+            margin: 0;
+            color: $main-txt-light;
+        }
+        p {
+            color: $main-txt-light;
+            font-size: 20px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .profile {
+        grid-area: profile;
+        justify-self: right;
+    }
+    
+}
